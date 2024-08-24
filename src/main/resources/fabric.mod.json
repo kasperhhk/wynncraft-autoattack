@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "frayes-wynncraft-autoattacker",
+	"version": "${version}",
+	"name": "Fraye's Wynncraft Autoattacker",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/frayes-wynncraft-autoattacker/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.fraye.autoattack.FrayesWynncraftAutoattacker"
+		],
+		"client": [
+			"com.fraye.autoattack.FrayesWynncraftAutoattackerClient"
+		]
+	},
+	"mixins": [
+		"frayes-wynncraft-autoattacker.mixins.json",
+		{
+			"config": "frayes-wynncraft-autoattacker.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
