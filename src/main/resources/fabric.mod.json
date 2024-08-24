@@ -13,17 +13,13 @@
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/frayes-wynncraft-autoattacker/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"com.fraye.autoattack.FrayesWynncraftAutoattacker"
-		],
 		"client": [
 			"com.fraye.autoattack.FrayesWynncraftAutoattackerClient"
 		]
 	},
 	"mixins": [
-		"frayes-wynncraft-autoattacker.mixins.json",
 		{
 			"config": "frayes-wynncraft-autoattacker.client.mixins.json",
 			"environment": "client"
@@ -34,8 +30,5 @@
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
