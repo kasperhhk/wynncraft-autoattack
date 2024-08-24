@@ -22,7 +22,7 @@ import com.fraye.autoattack.Settings;
 
 @Mixin(MinecraftClient.class)
 public class ExampleClientMixin {
-	public static int ticksSinceLastAttack = 0;
+	private static int ticksSinceLastAttack = 0;
 
 	@Inject(at = @At("HEAD"), method = "run")
 	private void init(CallbackInfo info) {
