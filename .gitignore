@@ -1,5 +1,7 @@
 # gradle
 
+src/client/java/com/fraye/autoattack/FrayeAutoAttackConfig.java
+
 .gradle/
 build/
 out/

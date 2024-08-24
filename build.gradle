@@ -6,12 +6,10 @@ plugins {
 sourceSets {
 	generated {
 		java {
-			srcDir "$projectDir/generated/java"
+			srcDir "${buildDir}/generated/java"
 		}
 	}
 }
-//sourceSets.main.java.srcDirs += [ 'src/client/generatedJava' ]
-//compileJava.options.generatedSourceOutputDirectory = file("${projectDir}/src/client/generatedJava/com/fraye/autoattack")
 
 version = project.mod_version
 group = project.maven_group
